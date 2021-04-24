@@ -27,7 +27,7 @@ if __name__ == '__main__':
         os.system('cd web_developer_blog/frontend & npm install @material-ui/icons --save')
         os.system('cd web_developer_blog/frontend & npm install react-froala-wysiwyg --save')
         os.system('cd web_developer_blog/frontend & npm install react-modules babel-template --save')
-    python = input('choose python command: python / python3')
+    python = input('choose python command: python / python3 ')
     os.system('pip install django djangorestframework django-cors-headers')
     CMDThread(f'cd web_developer_blog & {python} manage.py runserver').start()
     CMDThread(f'cd web_developer_blog/frontend & npm start').start()
